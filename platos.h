@@ -1,0 +1,57 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+using std::string;
+
+#ifndef PLATOS_H
+#define PLATOS_H
+class platos{
+	protected:
+		int cantidadIngredientes;
+		string resenaOrigen;
+		int cantidadSabor;
+		int registro;
+		int precio;
+		int valoracion;
+		int cantidadAporte;
+		int duracion;
+		
+		string historialVentas;
+	public:
+		platos(int,string,int,int,int,int,int,int,string);
+		platos();
+		int getCantidadIngredientes();
+		void setCantidadIngredientes(int);
+
+		string getResenaOrigen();
+		void setResenaOrigen(string);
+
+		int getCantidadSabor();
+		void setCantidadSabor(int);
+
+		int getRegistro();
+		void setRegistro(int);
+
+		int getPrecio();
+		void setPrecio(int);
+
+		int getValoracion();
+		void setValoracion(int);
+
+		int getCantidadAporte();
+		void setCantidadAporte(int);
+
+		int getDuracion();
+		void setDuracion(int);
+		
+
+		int getPlatos();
+		void setPlatos(int);
+
+		string getHistorialVentas();
+		void setHistorialVentas(string);
+
+
+};
+#endif
